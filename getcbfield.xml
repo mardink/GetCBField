@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension version="1.7" type="plugin" group="content">
+	<name>PLG_CONTENT_GETCBFIELD</name>
+	<author>Martijn Hiddink</author>
+	<creationDate>19-08-2011</creationDate>
+	<copyright>(C) 2011</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL v2.0</license>
+	<authorEmail>support@mardinkwebdesign.com</authorEmail>
+	<authorUrl>http://www.mardinkwebdesign.com</authorUrl>
+	<version>2.0.0</version>
+	<description>PLG_CONTENT_GETCBFIELD_XML_DESCRIPTION</description>
+			<files>
+		<filename plugin="getcbfield">getcbfield.php</filename>
+		<filename>index.html</filename>
+		<folder>languages</folder>
+	</files>
+<languages folder="languages">
+<language tag="en-GB">en-GB/en-GB.plg_content_getcbfield.ini</language>
+<language tag="en-GB">en-GB/en-GB.plg_content_getcbfield.sys.ini</language>
+<language tag="nl-NL">nl-NL/nl-NL.plg_content_getcbfield.ini</language>
+<language tag="nl-NL">nl-NL/nl-NL.plg_content_getcbfield.sys.ini</language>
+</languages>
+<config>
+<fields name="params">
+<fieldset name="basic">
+<field name="getfield" type="sql" default="firstname" label="PLG_CONTENT_GETCBFIELD_SELECT" query="SELECT name AS value, name FROM #__comprofiler_fields" />
+</fieldset>
+</fields>
+</config>
+</extension>
